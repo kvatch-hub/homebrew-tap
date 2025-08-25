@@ -5,21 +5,21 @@
 class Kvatch < Formula
   desc "Kvatch CLI"
   homepage "https://github.com/kvatch-hub/kvatch-cli"
-  version "0.5.0-alpha.4"
+  version "0.5.0-alpha.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kvatch-hub/kvatch-cli/releases/download/v0.5.0-alpha.4/kvatch-cli_0.5.0-alpha.4_darwin_amd64.tar.gz"
-      sha256 "e6ec07ce71057b88ae58e4f6b47c013637fb07bb2fe04dd92f6e642a05f56da2"
+      url "https://github.com/kvatch-hub/kvatch-cli/releases/download/v0.5.0-alpha.5/kvatch-cli_0.5.0-alpha.5_darwin_amd64.tar.gz"
+      sha256 "211a0166c0004ffb523423dce82da6d26412fd2e00aaa5f442284bbccef2f7b0"
 
       def install
         bin.install "kvatch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kvatch-hub/kvatch-cli/releases/download/v0.5.0-alpha.4/kvatch-cli_0.5.0-alpha.4_darwin_arm64.tar.gz"
-      sha256 "d43ba401ddf63782c4556ec46395ab99f615e212939b1816865db0daec639d59"
+      url "https://github.com/kvatch-hub/kvatch-cli/releases/download/v0.5.0-alpha.5/kvatch-cli_0.5.0-alpha.5_darwin_arm64.tar.gz"
+      sha256 "af0ebfe0bb221970cc1724a17d7e05b83bea94a9474b036ba449e3aaea3de604"
 
       def install
         bin.install "kvatch"
@@ -29,15 +29,15 @@ class Kvatch < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kvatch-hub/kvatch-cli/releases/download/v0.5.0-alpha.4/kvatch-cli_0.5.0-alpha.4_linux_amd64.tar.gz"
-      sha256 "7b3e277e0d09365ef1c64adfc369d5fbd986e8b75990b6ba6fa18139a9167e98"
+      url "https://github.com/kvatch-hub/kvatch-cli/releases/download/v0.5.0-alpha.5/kvatch-cli_0.5.0-alpha.5_linux_amd64.tar.gz"
+      sha256 "9a87af4a2f4417e53972f458b1f2bd322c60e72fd1e88b09efff08fdbc10e8ba"
       def install
         bin.install "kvatch"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/kvatch-hub/kvatch-cli/releases/download/v0.5.0-alpha.4/kvatch-cli_0.5.0-alpha.4_linux_arm64.tar.gz"
-      sha256 "e8ed4ed5c62704b4a79735e4d2431556771d27042a392e0c4f5acb5986d13730"
+      url "https://github.com/kvatch-hub/kvatch-cli/releases/download/v0.5.0-alpha.5/kvatch-cli_0.5.0-alpha.5_linux_arm64.tar.gz"
+      sha256 "9bbedd92b33f63a1a945002afcb013417a61d5f10f38ded582955b5258af9739"
       def install
         bin.install "kvatch"
       end
